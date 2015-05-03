@@ -34,6 +34,9 @@ public class Decoder
     {
         String decodedMessage = "";
         // YOUR CODE HERE
+        for (int i = startingIndex; i < encodedMessage.length(); i = i + 10) {
+            decodedMessage = decodedMessage + encodedMessage.substring(i, i+1);
+        }
         return decodedMessage;
     }
 }

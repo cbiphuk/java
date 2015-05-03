@@ -22,8 +22,13 @@ public class Twitterizer
      * Prints a post backwards to hide its contents.
      * @param post the post to be reversed.
      */
-    public String reverse(String post)
-    {
+    public String reverse(String post) {
+       String reversedPost = "";
        
+       for(int i = post.length(); i > 0; i--) {
+            reversedPost = reversedPost + post.substring(i - 1, i);
+       }
+       return reversedPost; 
+
     }
 }

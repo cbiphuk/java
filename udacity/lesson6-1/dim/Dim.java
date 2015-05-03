@@ -8,5 +8,9 @@ public class Dim
         mary.draw();
         // TODO iterate over the pixels in the image turning every 5th one to Color.BLACK
         // your code here.
+
+        for(int i = 0; i < mary.pixels(); i += 5) {
+        	mary.setColorAt(i, Color.BLACK);
+        }
     }
 }
