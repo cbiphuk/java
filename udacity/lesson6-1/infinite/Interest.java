@@ -16,7 +16,7 @@ public class Interest
         double target = in.nextDouble();
         double rate = 0.01;
         int year = 0;
-        while (balance != target)
+        while (balance <= target)
         {
             double interest = balance * rate;
             balance = balance + interest;
